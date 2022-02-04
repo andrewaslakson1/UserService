@@ -11,8 +11,10 @@ This application was written by Andrew Aslakson
 Tech Stack
 ------------------------
 - Java 11
+- Maven
 - Spring-Boot
 - Prometheus
+- Jacoco
 
 -------------------------
 Running Instructions
