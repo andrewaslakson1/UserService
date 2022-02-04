@@ -30,3 +30,5 @@ Production History
 -------------------------
 - Initialized Project
 - Created Git Repository
+- Added POM dependencies
+- Created Driver class (Just starts Spring Boot Application)
