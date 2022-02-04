@@ -26,7 +26,7 @@ Running Instructions
 -------------------------
 Database Structure
 -------------------------
-![Database Diagram](https://github.com/andrewaslakson1/MicroService_Test_API/blob/main/src/main/resources/MicroService_Test_API_DB_Config.png?raw=true)
+![Database Diagram](https://github.com/andrewaslakson1/UserService/blob/main/src/main/resources/MicroService_Test_API_DB_Config.png?raw=true)
 
 -------------------------
 Production History
