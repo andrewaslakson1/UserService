@@ -1,0 +1,11 @@
+# Build files
+/target
+*.jar
+*.class
+
+# Intellij files
+/.idea
+*.iml
+
+# Private Files
+
