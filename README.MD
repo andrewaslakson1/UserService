@@ -13,6 +13,8 @@ Tech Stack
 - Java 11
 - Maven
 - Spring-Boot
+- Spring Cloud
+- Eureka
 - Prometheus
 - Jacoco
 - Lombok
