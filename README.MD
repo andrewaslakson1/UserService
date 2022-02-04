@@ -26,17 +26,7 @@ Running Instructions
 -------------------------
 Database Structure
 -------------------------
-<h3>Firebase</h3>
-<h5>Principal:</h5>
-- user_id PRIMARY KEY
-- user_email
-- user_password
-
-<h5>Notes:</h5>
-- used for authentication
-- encrypted principal object will be taken in as JWT from firebase and must be used with all requests to API!
--------------------------
-
+![Database Diagram](https://github.com/andrewaslakson1/MicroService_Test_API/blob/main/src/main/resources/MicroService_Test_API_DB_Config.png?raw=true)
 
 -------------------------
 Production History
