@@ -15,6 +15,7 @@ Tech Stack
 - Spring-Boot
 - Prometheus
 - Jacoco
+- Lombok
 
 -------------------------
 Running Instructions
