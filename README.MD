@@ -1,6 +1,12 @@
 This application was written by Andrew Aslakson
 - Built to run on minikube using kubernetes
 
+- Possibly a FootRace tracking system?
+
+- Secure with Firebase Authentication?
+
+- Most Likely just interactable with Postman?
+
 ------------------------
 Tech Stack
 ------------------------
