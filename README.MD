@@ -39,4 +39,6 @@ Production History
 - Added POM dependencies
 - Created Driver class (Just starts Spring Boot Application)
 - Added ERD Documentation
+- Refactored to just be UserService
+- Added Basic CRUD operations
 --------------------------
