@@ -2,6 +2,8 @@ package my.project.controller;
 
 import my.project.entity.dtos.requests.UpdateUserRequest;
 import my.project.entity.dtos.responses.UserResponse;
+import my.project.metrics.CollectMetrics;
+import my.project.metrics.ControllerEndpoints;
 import my.project.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +23,7 @@ public class UserController {
     }
 
     @PutMapping("/{username}")
+    @CollectMetrics(endPoint = ControllerEndpoints.CHECK_USERNAME_AVAILABILITY)
     public ResponseEntity<Void> checkNameAvailability(@PathVariable String username) {
 
         return userService.checkUsernameAvailability(username)
@@ -32,12 +35,13 @@ public class UserController {
     }
 
     @PostMapping("/create/{username}")
+    @CollectMetrics(endPoint = ControllerEndpoints.ADD_USER)
     public ResponseEntity<UserResponse> addUser(@PathVariable String username) {
-
-        return null;
+        return ResponseEntity.status(HttpStatus.CREATED).body(userService.addUser(username));
     }
 
     @GetMapping("/{userID}")
+    @CollectMetrics(endPoint = ControllerEndpoints.GET_USER)
     public ResponseEntity<UserResponse> getUser(@PathVariable String userID) {
 
         return ResponseEntity.ok(
@@ -47,6 +51,7 @@ public class UserController {
     }
 
     @PatchMapping("/edit")
+    @CollectMetrics(endPoint = ControllerEndpoints.UPDATE_USER)
     public ResponseEntity<UserResponse> updateUser(@RequestBody UpdateUserRequest req) {
 
         return ResponseEntity.ok(userService.updateUser(req));
@@ -54,6 +59,7 @@ public class UserController {
     }
 
     @DeleteMapping("/{userID}")
+    @CollectMetrics(endPoint = ControllerEndpoints.DELETE_USER)
     public ResponseEntity<Void> deleteUser(@PathVariable String userID) {
 
         userService.deleteUser(Long.valueOf(userID));
