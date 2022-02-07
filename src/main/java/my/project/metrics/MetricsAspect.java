@@ -143,6 +143,10 @@ public class MetricsAspect {
         try {
             return jp.proceed();
 
+        } catch (Throwable t) {
+            errorCount.inc();
+            throw t;
+
         } finally {
             timer.observeDuration();
 
