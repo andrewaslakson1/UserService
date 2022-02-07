@@ -12,10 +12,6 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
 
-        <spring-cloud-starter.version>3.1.0</spring-cloud-starter.version>
-        <spring-cloud-eureka.version>1.4.7.RELEASE</spring-cloud-eureka.version>
-        <spring-cloud-starter-parent.version>2020.0.5</spring-cloud-starter-parent.version>
-
         <prometheus.version>0.14.1</prometheus.version>
         <lombok.version>1.18.22</lombok.version>
     </properties>
@@ -47,17 +43,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter</artifactId>
-            <version>${spring-cloud-starter.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
-            <version>${spring-cloud-eureka.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>io.prometheus</groupId>
             <artifactId>simpleclient_spring_boot</artifactId>
             <version>${prometheus.version}</version>
@@ -74,16 +59,6 @@
             <version>${lombok.version}</version>
         </dependency>
     </dependencies>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-parent</artifactId>
-                <version>${spring-cloud-starter-parent.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <plugins>
