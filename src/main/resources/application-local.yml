@@ -11,7 +11,7 @@ spring:
       ddl-auto: create-drop
 
 management:
-  enpoints:
+  endpoints:
     web:
       exposure:
         include: "*"
