@@ -9,6 +9,12 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: create-drop
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: false
 
 management:
   endpoints:

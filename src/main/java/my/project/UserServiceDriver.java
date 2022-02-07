@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class UserServiceDriver {
-    public void main(String[] args) {
+    public static void main(String[] args) {
         SpringApplication.run(UserServiceDriver.class, args);
     }
 }
