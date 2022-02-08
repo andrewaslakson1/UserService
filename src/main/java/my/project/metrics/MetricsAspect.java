@@ -10,10 +10,8 @@ import org.aspectj.lang.annotation.*;
 
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 @Aspect
-@Component
 public class MetricsAspect {
 
     private final Counter requestCount;

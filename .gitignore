@@ -7,5 +7,9 @@
 /.idea
 *.iml
 
+# logs
+/logs
+*.log
+
 # Private Files
 application-dev.yml

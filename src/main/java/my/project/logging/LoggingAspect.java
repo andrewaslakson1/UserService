@@ -1,19 +1,18 @@
 package my.project.logging;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
-import org.springframework.stereotype.Component;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
 
 @Aspect
-@Component
 public class LoggingAspect {
 
-    private final Logger logger = LogManager.getLogger();
+    private final Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 
     @Pointcut("within(my.project..*)")
     public void logAll(){}
