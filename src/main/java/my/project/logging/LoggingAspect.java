@@ -5,14 +5,15 @@ import org.aspectj.lang.annotation.*;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
-import java.time.LocalDateTime;
 import java.util.Arrays;
 
 @Aspect
+@Component
 public class LoggingAspect {
 
-    private final Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
+    private final Logger logger = LoggerFactory.getLogger("my.project.logger.aspect");
 
     @Pointcut("within(my.project..*)")
     public void logAll(){}
@@ -22,16 +23,16 @@ public class LoggingAspect {
         String signature = extractMethodSignature(jp);
         String args = Arrays.toString(jp.getArgs());
 
-        logger.info("{} invoked at {} with provided arguments: {}",
-                signature, LocalDateTime.now(), args);
+        logger.debug("{} invoked with provided arguments: {}",
+                signature, args);
     }
 
     @AfterReturning(pointcut = "logAll()", returning = "returned")
     public void logMethodReturn(JoinPoint jp, Object returned) {
         String signature = extractMethodSignature(jp);
 
-        logger.info("{} successfully returned at {} with value: {}",
-                signature, LocalDateTime.now(), returned);
+        logger.debug("{} successfully returned with value: {}",
+                signature, returned);
     }
 
     @AfterThrowing(pointcut = "logAll()", throwing = "t")
@@ -39,8 +40,8 @@ public class LoggingAspect {
         String signature = extractMethodSignature(jp);
         String exceptionName = t.getClass().getName();
 
-        logger.warn("{} was thrown from {} at time {}, with message: {}",
-                exceptionName, signature, LocalDateTime.now(), t.getMessage());
+        logger.warn("{} was thrown from {} with message: {}",
+                exceptionName, signature, t.getMessage());
     }
 
     private String extractMethodSignature(JoinPoint jp) {

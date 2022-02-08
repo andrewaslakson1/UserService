@@ -12,6 +12,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
 
+        <micrometer.version>1.8.2</micrometer.version>
         <prometheus.version>0.14.1</prometheus.version>
         <lombok.version>1.18.22</lombok.version>
     </properties>
@@ -45,16 +46,20 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>io.prometheus</groupId>
-            <artifactId>simpleclient_spring_boot</artifactId>
+            <artifactId>simpleclient</artifactId>
             <version>${prometheus.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.prometheus</groupId>
-            <artifactId>simpleclient_hotspot</artifactId>
-            <version>${prometheus.version}</version>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+            <version>${micrometer.version}</version>
         </dependency>
 
         <dependency>
