@@ -13,7 +13,7 @@ import java.util.Arrays;
 @Component
 public class LoggingAspect {
 
-    private final Logger logger = LoggerFactory.getLogger("my.project.logger.aspect");
+    private final Logger logger = LoggerFactory.getLogger("my.project.logging.LoggingAspect");
 
     @Pointcut("within(my.project..*)")
     public void logAll(){}

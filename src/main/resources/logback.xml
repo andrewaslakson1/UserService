@@ -1,13 +1,22 @@
 <configuration>
 
-    <property name="LOG_HOME" value="user_service.log" />
+    <property name="LOG_HOME" value="./src/main/resources/logs/user_service.log" />
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
-
+    <appender name="STDWARN" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
         <file>${LOG_HOME}</file>
 
@@ -16,7 +25,10 @@
         </encoder>
     </appender>
 
-    <logger name="my.project.logger.aspect" level="debug" />
+    <logger name="my.project.logging.LoggingAspect" level="debug" additivity="false">
+        <appender-ref ref="FILE" />
+        <appender-ref ref="STDWARN" />
+    </logger>
 
     <root level="info">
         <appender-ref ref="STDOUT" />
