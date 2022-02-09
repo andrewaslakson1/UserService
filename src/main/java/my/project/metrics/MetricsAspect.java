@@ -111,6 +111,8 @@ public class MetricsAspect {
                         .getAnnotation(CollectMetrics.class)
                         .endPoint();
 
+        requestCount.inc();
+
         switch (endPoint) {
             case CHECK_USERNAME_AVAILABILITY:
                 timer = checkNameAvailabiltyRequestHistogram.startTimer();

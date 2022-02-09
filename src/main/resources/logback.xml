@@ -1,13 +1,19 @@
 <configuration>
 
-    <property name="LOG_HOME" value="./src/main/resources/logs/user_service.log" />
+    <property name="LOG_PATH" value="./src/main/resources/logs/" />
+    <property name="LOG_ARC_DIR" value="archived/" />
+    <property name="LOG_NAME" value="user_service" />
+    <property name="LOG_ARC_ID" value="-%d{yyy-MM-dd}.%i" />
+    <property name="LOG_EXT" value=".log" />
 
-    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+
+    <appender name="STD_OUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
-    <appender name="STDWARN" class="ch.qos.logback.core.ConsoleAppender">
+
+    <appender name="STD_WARN" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
@@ -17,21 +23,29 @@
             <onMismatch>DENY</onMismatch>
         </filter>
     </appender>
-    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>${LOG_HOME}</file>
 
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}${LOG_NAME}${LOG_EXT}</file>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}${LOG_ARC_DIR}${LOG_NAME}${LOG_ARC_ID}${LOG_EXT}</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
     </appender>
+
 
     <logger name="my.project.logging.LoggingAspect" level="debug" additivity="false">
         <appender-ref ref="FILE" />
-        <appender-ref ref="STDWARN" />
+        <appender-ref ref="STD_WARN" />
     </logger>
 
     <root level="info">
-        <appender-ref ref="STDOUT" />
+        <appender-ref ref="STD_OUT" />
         <appender-ref ref="FILE" />
     </root>
+
 </configuration>
