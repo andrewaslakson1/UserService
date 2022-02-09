@@ -30,7 +30,8 @@ public class UserService {
 
         Optional<User> foundUser = userRepo.findById(userID);
 
-        if (foundUser.isEmpty()) throw new UserNotFoundException();
+        if (foundUser.isEmpty())
+            throw new UserNotFoundException();
 
         return new UserResponse(foundUser.get());
     }
@@ -41,16 +42,23 @@ public class UserService {
 
     public UserResponse addUser(String username) {
 
-        if (checkNameAvail.test(username)) throw new DuplicateUsernameException();
+        if (checkNameAvail.test(username))
+            throw new DuplicateUsernameException();
 
-        userRepo.save(new User(username));
-
-        return new UserResponse(userRepo.findByUsername(username).get());
+        return new UserResponse(
+                userRepo.save(
+                        new User(username)
+                )
+        );
     }
 
     public UserResponse updateUser(UpdateUserRequest req) {
 
-        if (checkNameAvail.test(req.getUsername())) throw new DuplicateUsernameException();
+        if (userRepo.findById(req.getUserID()).isEmpty())
+            throw new UserNotFoundException();
+
+        if (checkNameAvail.test(req.getUsername()))
+            throw new DuplicateUsernameException();
 
         return new UserResponse(
                 userRepo.save(req.get())
@@ -60,7 +68,8 @@ public class UserService {
 
     public void deleteUser(Long userID) {
 
-        if (userRepo.findById(userID).isEmpty()) throw new UserNotFoundException();
+        if (userRepo.findById(userID).isEmpty())
+            throw new UserNotFoundException();
 
         userRepo.deleteById(userID);
 

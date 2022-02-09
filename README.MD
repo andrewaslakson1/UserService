@@ -50,3 +50,8 @@ Production History
 - Added more Exceptions to Exception Handler
 - h2-console and prometheus metrics are available on endpoints
 ---------------------------
+---------------------------
+02-09-2022
+---------------------------
+- Added Unit Testing For Service Layer Logic
+---------------------------
