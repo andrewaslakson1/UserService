@@ -42,3 +42,11 @@ Production History
 - Refactored to just be UserService
 - Added Basic CRUD operations
 --------------------------
+--------------------------
+02-08-2022
+--------------------------
+- Finished MetricsAspect
+- Finished LoggingAspect
+- Added more Exceptions to Exception Handler
+- h2-console and prometheus metrics are available on endpoints
+---------------------------
