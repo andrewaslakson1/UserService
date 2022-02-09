@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: user-service
+    name: user-service-local
   datasource:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:local
@@ -22,6 +22,9 @@ spring:
       path: /h2-console
       settings:
         web-allow-others: false
+  sql:
+    init:
+      mode: never
 
 management:
   endpoints:
