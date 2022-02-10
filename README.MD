@@ -76,4 +76,6 @@ Production History
 - Added integration testing
 - finished configuring local and test profiles
 - Changed UserId to be GenerationStrategy.IDENTITY
+- Finalized project, cleaned code
+- Massive project reorganization
 ---------------------------
