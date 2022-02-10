@@ -13,8 +13,6 @@ Tech Stack
 - Java 11
 - Maven
 - Spring-Boot
-- Spring Cloud
-- Eureka
 - Prometheus
 - Jacoco
 - Lombok
@@ -22,11 +20,21 @@ Tech Stack
 -------------------------
 Running Instructions
 -------------------------
+- tests "mvn clean test -Dspring.profiles.active=test"
+  - this generates jacoco reports and runs all Unit and Integration tests
+  - test profile uses H2 database, and populates it with 5 test users
+- local Environment: Uses h2 database, used while developing
+- Dev Environment: meant to be for kubernetes, most likely connects to DB hosted on kubernetes
+  - Not yet actually configured
+- h2-console: configured to be at: "localhost:5000/h2-console", URL: "jdbc:h2:mem:local"
+  - Username: admin
+  - password: password
+- Prometheus Statistics: reached at: "localhost:5000/actuator/prometheus"
 
 -------------------------
 Database Structure
 -------------------------
-![Database Diagram](https://github.com/andrewaslakson1/UserService/blob/main/src/main/resources/MicroService_Test_API_DB_Config.png?raw=true)
+![Database Diagram](https://github.com/andrewaslakson1/UserService/blob/main/src/main/resources/documentation/MicroService_Test_API_DB_Config.png?raw=true)
 
 -------------------------
 Production History
@@ -54,4 +62,12 @@ Production History
 02-09-2022
 ---------------------------
 - Added Unit Testing For Service Layer Logic
+- Did a lot more reconfiguring of things today
+---------------------------
+---------------------------
+02-10-2022
+---------------------------
+- Added integration testing
+- finished configuring local and test profiles
+- Changed UserId to be GenerationStrategy.IDENTITY
 ---------------------------

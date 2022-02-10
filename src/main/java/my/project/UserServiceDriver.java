@@ -9,14 +9,13 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class UserServiceDriver {
 
-    private static PrometheusMetricsExportAutoConfiguration metricsConfig = new PrometheusMetricsExportAutoConfiguration();
-
     public static void main(String[] args) {
         SpringApplication.run(UserServiceDriver.class, args);
     }
 
     @Bean
     public static CollectorRegistry getRegistryBean() {
-        return metricsConfig.collectorRegistry();
+        return new PrometheusMetricsExportAutoConfiguration().collectorRegistry();
     }
+
 }
