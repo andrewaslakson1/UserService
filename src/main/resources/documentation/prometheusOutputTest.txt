@@ -1,204 +1,227 @@
+
+#--------------------------------------------------#
+
 # TYPE request_count counter
 # HELP request_count Total number of requests to user service
-request_count_total 28.0
-request_count_created 1.644368118593E9
+request_count_total 34.0
+request_count_created 1.644526151425E9
 
 # TYPE error_count counter
 # HELP error_count Total number of errors from user service
-error_count_total 6.0
-error_count_created 1.644368118594E9
+error_count_total 9.0
+error_count_created 1.644526151426E9
 
-#------------------------------------------------------------------------------------------------------
+#--------------------------------------------------#
 
 # TYPE name_availability_request_count counter
 # HELP name_availability_request_count Total number of requests to check name availability
-name_availability_request_count_total 6.0
-name_availability_request_count_created 1.644368118594E9
+name_availability_request_count_total 7.0
+name_availability_request_count_created 1.644526151426E9
 
 # TYPE name_availability_request_histogram histogram
 # HELP name_availability_request_histogram Histogram showing request time for requesting name availability
 name_availability_request_histogram_bucket{le="0.005"} 4.0
-name_availability_request_histogram_bucket{le="0.01"} 5.0
-name_availability_request_histogram_bucket{le="0.025"} 5.0
-name_availability_request_histogram_bucket{le="0.05"} 5.0
-name_availability_request_histogram_bucket{le="0.075"} 5.0
-name_availability_request_histogram_bucket{le="0.1"} 5.0
-name_availability_request_histogram_bucket{le="0.25"} 6.0
-name_availability_request_histogram_bucket{le="0.5"} 6.0
-name_availability_request_histogram_bucket{le="0.75"} 6.0
-name_availability_request_histogram_bucket{le="1.0"} 6.0
-name_availability_request_histogram_bucket{le="2.5"} 6.0
-name_availability_request_histogram_bucket{le="5.0"} 6.0
-name_availability_request_histogram_bucket{le="7.5"} 6.0
-name_availability_request_histogram_bucket{le="10.0"} 6.0
-name_availability_request_histogram_bucket{le="+Inf"} 6.0
-name_availability_request_histogram_count 6.0
-name_availability_request_histogram_sum 0.2372626
-name_availability_request_histogram_created 1.644368118595E9
+name_availability_request_histogram_bucket{le="0.01"} 6.0
+name_availability_request_histogram_bucket{le="0.025"} 7.0
+name_availability_request_histogram_bucket{le="0.05"} 7.0
+name_availability_request_histogram_bucket{le="0.075"} 7.0
+name_availability_request_histogram_bucket{le="0.1"} 7.0
+name_availability_request_histogram_bucket{le="0.25"} 7.0
+name_availability_request_histogram_bucket{le="0.5"} 7.0
+name_availability_request_histogram_bucket{le="0.75"} 7.0
+name_availability_request_histogram_bucket{le="1.0"} 7.0
+name_availability_request_histogram_bucket{le="2.5"} 7.0
+name_availability_request_histogram_bucket{le="5.0"} 7.0
+name_availability_request_histogram_bucket{le="7.5"} 7.0
+name_availability_request_histogram_bucket{le="10.0"} 7.0
+name_availability_request_histogram_bucket{le="+Inf"} 7.0
+name_availability_request_histogram_count 7.0
+name_availability_request_histogram_sum 0.0358267
+name_availability_request_histogram_created 1.644526151427E9
 
-#------------------------------------------------------------------------------------------------------
+#--------------------------------------------------#
 
 # TYPE get_user_request_count counter
 # HELP get_user_request_count Total number of requests to get user
-get_user_request_count_total 8.0
-get_user_request_count_created 1.644368118594E9
+get_user_request_count_total 6.0
+get_user_request_count_created 1.644526151426E9
 
 # TYPE get_user_request_histogram histogram
 # HELP get_user_request_histogram Histogram showing request time for requesting get user
-get_user_request_histogram_bucket{le="0.005"} 3.0
-get_user_request_histogram_bucket{le="0.01"} 6.0
-get_user_request_histogram_bucket{le="0.025"} 7.0
-get_user_request_histogram_bucket{le="0.05"} 8.0
-get_user_request_histogram_bucket{le="0.075"} 8.0
-get_user_request_histogram_bucket{le="0.1"} 8.0
-get_user_request_histogram_bucket{le="0.25"} 8.0
-get_user_request_histogram_bucket{le="0.5"} 8.0
-get_user_request_histogram_bucket{le="0.75"} 8.0
-get_user_request_histogram_bucket{le="1.0"} 8.0
-get_user_request_histogram_bucket{le="2.5"} 8.0
-get_user_request_histogram_bucket{le="5.0"} 8.0
-get_user_request_histogram_bucket{le="7.5"} 8.0
-get_user_request_histogram_bucket{le="10.0"} 8.0
-get_user_request_histogram_bucket{le="+Inf"} 8.0
-get_user_request_histogram_count 8.0
-get_user_request_histogram_sum 0.0846151
-get_user_request_histogram_created 1.644368118596E9
+get_user_request_histogram_bucket{le="0.005"} 4.0
+get_user_request_histogram_bucket{le="0.01"} 4.0
+get_user_request_histogram_bucket{le="0.025"} 6.0
+get_user_request_histogram_bucket{le="0.05"} 6.0
+get_user_request_histogram_bucket{le="0.075"} 6.0
+get_user_request_histogram_bucket{le="0.1"} 6.0
+get_user_request_histogram_bucket{le="0.25"} 6.0
+get_user_request_histogram_bucket{le="0.5"} 6.0
+get_user_request_histogram_bucket{le="0.75"} 6.0
+get_user_request_histogram_bucket{le="1.0"} 6.0
+get_user_request_histogram_bucket{le="2.5"} 6.0
+get_user_request_histogram_bucket{le="5.0"} 6.0
+get_user_request_histogram_bucket{le="7.5"} 6.0
+get_user_request_histogram_bucket{le="10.0"} 6.0
+get_user_request_histogram_bucket{le="+Inf"} 6.0
+get_user_request_histogram_count 6.0
+get_user_request_histogram_sum 0.044185300000000004
+get_user_request_histogram_created 1.644526151427E9
 
-#------------------------------------------------------------------------------------------------------
+#--------------------------------------------------#
 
 # TYPE add_user_request_count counter
 # HELP add_user_request_count Total number of requests to add user
-add_user_request_count_total 9.0
-add_user_request_count_created 1.644368118594E9
+add_user_request_count_total 12.0
+add_user_request_count_created 1.644526151426E9
 
 # TYPE add_user_request_histogram histogram
 # HELP add_user_request_histogram Histogram showing request time for requesting add user
-add_user_request_histogram_bucket{le="0.005"} 3.0
+add_user_request_histogram_bucket{le="0.005"} 2.0
 add_user_request_histogram_bucket{le="0.01"} 7.0
-add_user_request_histogram_bucket{le="0.025"} 8.0
-add_user_request_histogram_bucket{le="0.05"} 8.0
-add_user_request_histogram_bucket{le="0.075"} 9.0
-add_user_request_histogram_bucket{le="0.1"} 9.0
-add_user_request_histogram_bucket{le="0.25"} 9.0
-add_user_request_histogram_bucket{le="0.5"} 9.0
-add_user_request_histogram_bucket{le="0.75"} 9.0
-add_user_request_histogram_bucket{le="1.0"} 9.0
-add_user_request_histogram_bucket{le="2.5"} 9.0
-add_user_request_histogram_bucket{le="5.0"} 9.0
-add_user_request_histogram_bucket{le="7.5"} 9.0
-add_user_request_histogram_bucket{le="10.0"} 9.0
-add_user_request_histogram_bucket{le="+Inf"} 9.0
-add_user_request_histogram_count 9.0
-add_user_request_histogram_sum 0.10409410000000001
-add_user_request_histogram_created 1.644368118596E9
+add_user_request_histogram_bucket{le="0.025"} 11.0
+add_user_request_histogram_bucket{le="0.05"} 11.0
+add_user_request_histogram_bucket{le="0.075"} 11.0
+add_user_request_histogram_bucket{le="0.1"} 11.0
+add_user_request_histogram_bucket{le="0.25"} 12.0
+add_user_request_histogram_bucket{le="0.5"} 12.0
+add_user_request_histogram_bucket{le="0.75"} 12.0
+add_user_request_histogram_bucket{le="1.0"} 12.0
+add_user_request_histogram_bucket{le="2.5"} 12.0
+add_user_request_histogram_bucket{le="5.0"} 12.0
+add_user_request_histogram_bucket{le="7.5"} 12.0
+add_user_request_histogram_bucket{le="10.0"} 12.0
+add_user_request_histogram_bucket{le="+Inf"} 12.0
+add_user_request_histogram_count 12.0
+add_user_request_histogram_sum 0.28587850000000004
+add_user_request_histogram_created 1.644526151427E9
 
-#------------------------------------------------------------------------------------------------------
+#--------------------------------------------------#
 
 # TYPE update_user_request_count counter
 # HELP update_user_request_count Total number of requests to update user
-update_user_request_count_total 3.0
-update_user_request_count_created 1.644368118594E9
+update_user_request_count_total 2.0
+update_user_request_count_created 1.644526151426E9
 
 # TYPE update_user_request_histogram histogram
 # HELP update_user_request_histogram Histogram showing request time for requesting update user
-update_user_request_histogram_bucket{le="0.005"} 1.0
-update_user_request_histogram_bucket{le="0.01"} 2.0
+update_user_request_histogram_bucket{le="0.005"} 0.0
+update_user_request_histogram_bucket{le="0.01"} 0.0
 update_user_request_histogram_bucket{le="0.025"} 2.0
-update_user_request_histogram_bucket{le="0.05"} 3.0
-update_user_request_histogram_bucket{le="0.075"} 3.0
-update_user_request_histogram_bucket{le="0.1"} 3.0
-update_user_request_histogram_bucket{le="0.25"} 3.0
-update_user_request_histogram_bucket{le="0.5"} 3.0
-update_user_request_histogram_bucket{le="0.75"} 3.0
-update_user_request_histogram_bucket{le="1.0"} 3.0
-update_user_request_histogram_bucket{le="2.5"} 3.0
-update_user_request_histogram_bucket{le="5.0"} 3.0
-update_user_request_histogram_bucket{le="7.5"} 3.0
-update_user_request_histogram_bucket{le="10.0"} 3.0
-update_user_request_histogram_bucket{le="+Inf"} 3.0
-update_user_request_histogram_count 3.0
-update_user_request_histogram_sum 0.0472799
-update_user_request_histogram_created 1.644368118596E9
+update_user_request_histogram_bucket{le="0.05"} 2.0
+update_user_request_histogram_bucket{le="0.075"} 2.0
+update_user_request_histogram_bucket{le="0.1"} 2.0
+update_user_request_histogram_bucket{le="0.25"} 2.0
+update_user_request_histogram_bucket{le="0.5"} 2.0
+update_user_request_histogram_bucket{le="0.75"} 2.0
+update_user_request_histogram_bucket{le="1.0"} 2.0
+update_user_request_histogram_bucket{le="2.5"} 2.0
+update_user_request_histogram_bucket{le="5.0"} 2.0
+update_user_request_histogram_bucket{le="7.5"} 2.0
+update_user_request_histogram_bucket{le="10.0"} 2.0
+update_user_request_histogram_bucket{le="+Inf"} 2.0
+update_user_request_histogram_count 2.0
+update_user_request_histogram_sum 0.027811000000000002
+update_user_request_histogram_created 1.644526151427E9
 
-#------------------------------------------------------------------------------------------------------
+#--------------------------------------------------#
 
 # TYPE delete_user_request_count counter
 # HELP delete_user_request_count Total number of requests to delete user
-delete_user_request_count_total 2.0
-delete_user_request_count_created 1.644368118594E9
+delete_user_request_count_total 7.0
+delete_user_request_count_created 1.644526151426E9
 
 # TYPE delete_user_request_histogram histogram
 # HELP delete_user_request_histogram Histogram showing request time for requesting delete user
-delete_user_request_histogram_bucket{le="0.005"} 0.0
-delete_user_request_histogram_bucket{le="0.01"} 1.0
-delete_user_request_histogram_bucket{le="0.025"} 2.0
-delete_user_request_histogram_bucket{le="0.05"} 2.0
-delete_user_request_histogram_bucket{le="0.075"} 2.0
-delete_user_request_histogram_bucket{le="0.1"} 2.0
-delete_user_request_histogram_bucket{le="0.25"} 2.0
-delete_user_request_histogram_bucket{le="0.5"} 2.0
-delete_user_request_histogram_bucket{le="0.75"} 2.0
-delete_user_request_histogram_bucket{le="1.0"} 2.0
-delete_user_request_histogram_bucket{le="2.5"} 2.0
-delete_user_request_histogram_bucket{le="5.0"} 2.0
-delete_user_request_histogram_bucket{le="7.5"} 2.0
-delete_user_request_histogram_bucket{le="10.0"} 2.0
-delete_user_request_histogram_bucket{le="+Inf"} 2.0
-delete_user_request_histogram_count 2.0
-delete_user_request_histogram_sum 0.0208191
-delete_user_request_histogram_created 1.644368118596E9
+delete_user_request_histogram_bucket{le="0.005"} 2.0
+delete_user_request_histogram_bucket{le="0.01"} 6.0
+delete_user_request_histogram_bucket{le="0.025"} 7.0
+delete_user_request_histogram_bucket{le="0.05"} 7.0
+delete_user_request_histogram_bucket{le="0.075"} 7.0
+delete_user_request_histogram_bucket{le="0.1"} 7.0
+delete_user_request_histogram_bucket{le="0.25"} 7.0
+delete_user_request_histogram_bucket{le="0.5"} 7.0
+delete_user_request_histogram_bucket{le="0.75"} 7.0
+delete_user_request_histogram_bucket{le="1.0"} 7.0
+delete_user_request_histogram_bucket{le="2.5"} 7.0
+delete_user_request_histogram_bucket{le="5.0"} 7.0
+delete_user_request_histogram_bucket{le="7.5"} 7.0
+delete_user_request_histogram_bucket{le="10.0"} 7.0
+delete_user_request_histogram_bucket{le="+Inf"} 7.0
+delete_user_request_histogram_count 7.0
+delete_user_request_histogram_sum 0.0591857
+delete_user_request_histogram_created 1.644526151427E9
 
-#------------------------------------------------------------------------------------------------------
+#--------------------------------------------------#
 
 # TYPE http_server_requests_seconds summary
 # HELP http_server_requests_seconds  
-http_server_requests_seconds_count{exception="None",method="GET",outcome="CLIENT_ERROR",status="409",uri="/user/{username}"} 3.0
-http_server_requests_seconds_sum{exception="None",method="GET",outcome="CLIENT_ERROR",status="409",uri="/user/{username}"} 0.0318111
 http_server_requests_seconds_count{exception="DuplicateUsernameException",method="POST",outcome="CLIENT_ERROR",status="409",uri="/user/create/{username}"} 3.0
-http_server_requests_seconds_sum{exception="DuplicateUsernameException",method="POST",outcome="CLIENT_ERROR",status="409",uri="/user/create/{username}"} 0.0464293
-http_server_requests_seconds_count{exception="UserNotFoundException",method="DELETE",outcome="CLIENT_ERROR",status="404",uri="/user/{userID}"} 1.0
-http_server_requests_seconds_sum{exception="UserNotFoundException",method="DELETE",outcome="CLIENT_ERROR",status="404",uri="/user/{userID}"} 0.0172369
-http_server_requests_seconds_count{exception="UserNotFoundException",method="GET",outcome="CLIENT_ERROR",status="404",uri="/user/id/{userID}"} 2.0
-http_server_requests_seconds_sum{exception="UserNotFoundException",method="GET",outcome="CLIENT_ERROR",status="404",uri="/user/id/{userID}"} 0.14873
-http_server_requests_seconds_count{exception="None",method="PATCH",outcome="SUCCESS",status="200",uri="/user/edit"} 3.0
-http_server_requests_seconds_sum{exception="None",method="PATCH",outcome="SUCCESS",status="200",uri="/user/edit"} 0.1154044
-http_server_requests_seconds_count{exception="None",method="POST",outcome="SUCCESS",status="201",uri="/user/create/{username}"} 6.0
-http_server_requests_seconds_sum{exception="None",method="POST",outcome="SUCCESS",status="201",uri="/user/create/{username}"} 0.1345571
+http_server_requests_seconds_sum{exception="DuplicateUsernameException",method="POST",outcome="CLIENT_ERROR",status="409",uri="/user/create/{username}"} 0.0738323
+http_server_requests_seconds_count{exception="UserNotFoundException",method="DELETE",outcome="CLIENT_ERROR",status="404",uri="/user/{userID}"} 3.0
+http_server_requests_seconds_sum{exception="UserNotFoundException",method="DELETE",outcome="CLIENT_ERROR",status="404",uri="/user/{userID}"} 0.0372824
+http_server_requests_seconds_count{exception="UserNotFoundException",method="GET",outcome="CLIENT_ERROR",status="404",uri="/user/id/{userID}"} 3.0
+http_server_requests_seconds_sum{exception="UserNotFoundException",method="GET",outcome="CLIENT_ERROR",status="404",uri="/user/id/{userID}"} 0.0524022
+http_server_requests_seconds_count{exception="None",method="GET",outcome="REDIRECTION",status="304",uri="REDIRECTION"} 3.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="REDIRECTION",status="304",uri="REDIRECTION"} 0.001163
 http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="204",uri="/user/{username}"} 3.0
-http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="204",uri="/user/{username}"} 0.3334341
-http_server_requests_seconds_count{exception="None",method="DELETE",outcome="SUCCESS",status="204",uri="/user/{userID}"} 1.0
-http_server_requests_seconds_sum{exception="None",method="DELETE",outcome="SUCCESS",status="204",uri="/user/{userID}"} 0.0251259
-http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/user/id/{userID}"} 6.0
-http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/user/id/{userID}"} 0.0863889
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="204",uri="/user/{username}"} 0.0394358
+http_server_requests_seconds_count{exception="None",method="GET",outcome="REDIRECTION",status="302",uri="REDIRECTION"} 1.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="REDIRECTION",status="302",uri="REDIRECTION"} 0.0063038
+http_server_requests_seconds_count{exception="None",method="GET",outcome="CLIENT_ERROR",status="404",uri="/**"} 1.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="CLIENT_ERROR",status="404",uri="/**"} 0.0195203
+http_server_requests_seconds_count{exception="None",method="DELETE",outcome="SUCCESS",status="204",uri="/user/{userID}"} 4.0
+http_server_requests_seconds_sum{exception="None",method="DELETE",outcome="SUCCESS",status="204",uri="/user/{userID}"} 0.0666228
+http_server_requests_seconds_count{exception="None",method="GET",outcome="CLIENT_ERROR",status="409",uri="/user/{username}"} 4.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="CLIENT_ERROR",status="409",uri="/user/{username}"} 0.0378474
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="UNKNOWN"} 34.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="UNKNOWN"} 0.3001906
+http_server_requests_seconds_count{exception="None",method="POST",outcome="SUCCESS",status="200",uri="UNKNOWN"} 3.0
+http_server_requests_seconds_sum{exception="None",method="POST",outcome="SUCCESS",status="200",uri="UNKNOWN"} 0.021171
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="root"} 1.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="root"} 0.0170948
+http_server_requests_seconds_count{exception="None",method="PATCH",outcome="SUCCESS",status="200",uri="/user/edit"} 2.0
+http_server_requests_seconds_sum{exception="None",method="PATCH",outcome="SUCCESS",status="200",uri="/user/edit"} 0.0801829
+http_server_requests_seconds_count{exception="None",method="POST",outcome="SUCCESS",status="201",uri="/user/create/{username}"} 9.0
+http_server_requests_seconds_sum{exception="None",method="POST",outcome="SUCCESS",status="201",uri="/user/create/{username}"} 0.3722491
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/user/id/{userID}"} 3.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/user/id/{userID}"} 0.0584855
 
 # TYPE http_server_requests_seconds_max gauge
 # HELP http_server_requests_seconds_max  
-http_server_requests_seconds_max{exception="None",method="GET",outcome="CLIENT_ERROR",status="409",uri="/user/{username}"} 0.0114386
-http_server_requests_seconds_max{exception="DuplicateUsernameException",method="POST",outcome="CLIENT_ERROR",status="409",uri="/user/create/{username}"} 0.0196714
-http_server_requests_seconds_max{exception="UserNotFoundException",method="DELETE",outcome="CLIENT_ERROR",status="404",uri="/user/{userID}"} 0.0172369
-http_server_requests_seconds_max{exception="UserNotFoundException",method="GET",outcome="CLIENT_ERROR",status="404",uri="/user/id/{userID}"} 0.0174362
-http_server_requests_seconds_max{exception="None",method="PATCH",outcome="SUCCESS",status="200",uri="/user/edit"} 0.0906753
-http_server_requests_seconds_max{exception="None",method="POST",outcome="SUCCESS",status="201",uri="/user/create/{username}"} 0.0180763
-http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="204",uri="/user/{username}"} 0.0136882
-http_server_requests_seconds_max{exception="None",method="DELETE",outcome="SUCCESS",status="204",uri="/user/{userID}"} 0.0251259
-http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/user/id/{userID}"} 0.0271086
+http_server_requests_seconds_max{exception="DuplicateUsernameException",method="POST",outcome="CLIENT_ERROR",status="409",uri="/user/create/{username}"} 0.0118291
+http_server_requests_seconds_max{exception="UserNotFoundException",method="DELETE",outcome="CLIENT_ERROR",status="404",uri="/user/{userID}"} 0.0159415
+http_server_requests_seconds_max{exception="UserNotFoundException",method="GET",outcome="CLIENT_ERROR",status="404",uri="/user/id/{userID}"} 0.0271673
+http_server_requests_seconds_max{exception="None",method="GET",outcome="REDIRECTION",status="304",uri="REDIRECTION"} 3.155E-4
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="204",uri="/user/{username}"} 0.0144306
+http_server_requests_seconds_max{exception="None",method="GET",outcome="REDIRECTION",status="302",uri="REDIRECTION"} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="CLIENT_ERROR",status="404",uri="/**"} 0.0
+http_server_requests_seconds_max{exception="None",method="DELETE",outcome="SUCCESS",status="204",uri="/user/{userID}"} 0.0182711
+http_server_requests_seconds_max{exception="None",method="GET",outcome="CLIENT_ERROR",status="409",uri="/user/{username}"} 0.0063884
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="UNKNOWN"} 0.0
+http_server_requests_seconds_max{exception="None",method="POST",outcome="SUCCESS",status="200",uri="UNKNOWN"} 0.0028188
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="root"} 0.0
+http_server_requests_seconds_max{exception="None",method="PATCH",outcome="SUCCESS",status="200",uri="/user/edit"} 0.0
+http_server_requests_seconds_max{exception="None",method="POST",outcome="SUCCESS",status="201",uri="/user/create/{username}"} 0.0178644
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/user/id/{userID}"} 0.0181911
 
-#------------------------------------------------------------------------------------------------------
+#--------------------------------------------------#
 
 # TYPE spring_data_repository_invocations_seconds summary
 # HELP spring_data_repository_invocations_seconds  
-spring_data_repository_invocations_seconds_count{exception="None",method="findById",repository="UserRepository",state="SUCCESS"} 10.0
-spring_data_repository_invocations_seconds_sum{exception="None",method="findById",repository="UserRepository",state="SUCCESS"} 0.020062
-spring_data_repository_invocations_seconds_count{exception="None",method="deleteById",repository="UserRepository",state="SUCCESS"} 1.0
-spring_data_repository_invocations_seconds_sum{exception="None",method="deleteById",repository="UserRepository",state="SUCCESS"} 0.0031462
-spring_data_repository_invocations_seconds_count{exception="None",method="findByUsername",repository="UserRepository",state="SUCCESS"} 24.0
-spring_data_repository_invocations_seconds_sum{exception="None",method="findByUsername",repository="UserRepository",state="SUCCESS"} 0.2073671
-spring_data_repository_invocations_seconds_count{exception="None",method="save",repository="UserRepository",state="SUCCESS"} 9.0
-spring_data_repository_invocations_seconds_sum{exception="None",method="save",repository="UserRepository",state="SUCCESS"} 0.0493237
+spring_data_repository_invocations_seconds_count{exception="None",method="findById",repository="UserRepository",state="SUCCESS"} 15.0
+spring_data_repository_invocations_seconds_sum{exception="None",method="findById",repository="UserRepository",state="SUCCESS"} 0.0352025
+spring_data_repository_invocations_seconds_count{exception="None",method="deleteById",repository="UserRepository",state="SUCCESS"} 4.0
+spring_data_repository_invocations_seconds_sum{exception="None",method="deleteById",repository="UserRepository",state="SUCCESS"} 0.0048074
+spring_data_repository_invocations_seconds_count{exception="None",method="findByUsername",repository="UserRepository",state="SUCCESS"} 21.0
+spring_data_repository_invocations_seconds_sum{exception="None",method="findByUsername",repository="UserRepository",state="SUCCESS"} 0.1624556
+spring_data_repository_invocations_seconds_count{exception="None",method="save",repository="UserRepository",state="SUCCESS"} 11.0
+spring_data_repository_invocations_seconds_sum{exception="None",method="save",repository="UserRepository",state="SUCCESS"} 0.0521295
 
 # TYPE spring_data_repository_invocations_seconds_max gauge
 # HELP spring_data_repository_invocations_seconds_max  
-spring_data_repository_invocations_seconds_max{exception="None",method="findById",repository="UserRepository",state="SUCCESS"} 0.0020483
-spring_data_repository_invocations_seconds_max{exception="None",method="deleteById",repository="UserRepository",state="SUCCESS"} 0.0031462
-spring_data_repository_invocations_seconds_max{exception="None",method="findByUsername",repository="UserRepository",state="SUCCESS"} 0.0020136
-spring_data_repository_invocations_seconds_max{exception="None",method="save",repository="UserRepository",state="SUCCESS"} 0.0012681
+spring_data_repository_invocations_seconds_max{exception="None",method="findById",repository="UserRepository",state="SUCCESS"} 0.0037472
+spring_data_repository_invocations_seconds_max{exception="None",method="deleteById",repository="UserRepository",state="SUCCESS"} 6.524E-4
+spring_data_repository_invocations_seconds_max{exception="None",method="findByUsername",repository="UserRepository",state="SUCCESS"} 0.0022505
+spring_data_repository_invocations_seconds_max{exception="None",method="save",repository="UserRepository",state="SUCCESS"} 0.0023598
+
+#--------------------------------------------------#

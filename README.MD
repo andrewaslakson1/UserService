@@ -23,6 +23,12 @@ Running Instructions
 - tests "mvn clean test -Dspring.profiles.active=test"
   - this generates jacoco reports and runs all Unit and Integration tests
   - test profile uses H2 database, and populates it with 5 test users
+- Running: because tests have special configuration
+  - package with "mvn clean package -Dmaven.test.skip"
+    - default package is set to "local"
+  - package with dev profile: "mvn clean package -Dmaven.test.skip -Dspring.profile.active=dev"
+    - !Not implemented!
+  - run with "mvn spring-boot:run"
 - local Environment: Uses h2 database, used while developing
 - Dev Environment: meant to be for kubernetes, most likely connects to DB hosted on kubernetes
   - Not yet actually configured
