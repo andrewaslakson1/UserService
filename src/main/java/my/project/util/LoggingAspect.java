@@ -1,4 +1,4 @@
-package my.project.logging;
+package my.project.util;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -13,7 +13,7 @@ import java.util.Arrays;
 @Component
 public class LoggingAspect {
 
-    private final Logger logger = LoggerFactory.getLogger("my.project.logging.LoggingAspect");
+    private final Logger logger = LoggerFactory.getLogger("my.project.util.LoggingAspect");
 
     @Pointcut("within(my.project..*)")
     public void logAll(){}

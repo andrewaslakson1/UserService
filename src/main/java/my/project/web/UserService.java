@@ -1,11 +1,10 @@
-package my.project.service;
+package my.project.web;
 
 import my.project.entity.User;
-import my.project.entity.dtos.requests.UpdateUserRequest;
-import my.project.entity.dtos.responses.UserResponse;
-import my.project.exception.exceptions.DuplicateUsernameException;
-import my.project.exception.exceptions.UserNotFoundException;
-import my.project.repository.UserRepository;
+import my.project.entity.dtos.UpdateUserRequest;
+import my.project.entity.dtos.UserResponse;
+import my.project.util.exception.exceptions.DuplicateUsernameException;
+import my.project.util.exception.exceptions.UserNotFoundException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

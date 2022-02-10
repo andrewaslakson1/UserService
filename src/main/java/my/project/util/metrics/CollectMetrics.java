@@ -1,4 +1,4 @@
-package my.project.metrics;
+package my.project.util.metrics;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

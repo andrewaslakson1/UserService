@@ -1,8 +1,8 @@
-package my.project.exception;
+package my.project.util.exception;
 
-import my.project.exception.exceptions.DuplicateUsernameException;
-import my.project.exception.exceptions.InvalidMetricsConfigurationException;
-import my.project.exception.exceptions.UserNotFoundException;
+import my.project.util.exception.exceptions.DuplicateUsernameException;
+import my.project.util.exception.exceptions.InvalidMetricsConfigurationException;
+import my.project.util.exception.exceptions.UserNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.ExceptionHandler;

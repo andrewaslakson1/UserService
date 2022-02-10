@@ -1,4 +1,4 @@
-package my.project.metrics;
+package my.project.util.metrics;
 
 public enum ControllerEndpoints {
     UNASSIGNED,

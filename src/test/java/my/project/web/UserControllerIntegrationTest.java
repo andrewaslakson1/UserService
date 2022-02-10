@@ -1,12 +1,12 @@
-package my.project.controller;
+package my.project.web;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import my.project.entity.User;
-import my.project.entity.dtos.requests.UpdateUserRequest;
-import my.project.entity.dtos.responses.UserResponse;
-import my.project.exception.ExceptionResponse;
-import my.project.repository.UserRepository;
+import my.project.entity.dtos.UpdateUserRequest;
+import my.project.entity.dtos.UserResponse;
+import my.project.util.exception.ExceptionResponse;
+import my.project.web.UserRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

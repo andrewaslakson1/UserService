@@ -1,10 +1,9 @@
-package my.project.controller;
+package my.project.web;
 
-import my.project.entity.dtos.requests.UpdateUserRequest;
-import my.project.entity.dtos.responses.UserResponse;
-import my.project.metrics.CollectMetrics;
-import my.project.metrics.ControllerEndpoints;
-import my.project.service.UserService;
+import my.project.entity.dtos.UpdateUserRequest;
+import my.project.entity.dtos.UserResponse;
+import my.project.util.metrics.CollectMetrics;
+import my.project.util.metrics.ControllerEndpoints;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

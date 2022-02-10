@@ -1,4 +1,4 @@
-package my.project.repository;
+package my.project.web;
 
 import my.project.entity.User;
 

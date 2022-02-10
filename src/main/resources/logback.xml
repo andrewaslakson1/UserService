@@ -38,7 +38,7 @@
     </appender>
 
 
-    <logger name="my.project.logging.LoggingAspect" level="debug" additivity="false">
+    <logger name="my.project.util.LoggingAspect" level="debug" additivity="false">
         <appender-ref ref="FILE" />
         <appender-ref ref="STD_WARN" />
     </logger>

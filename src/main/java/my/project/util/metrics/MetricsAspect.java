@@ -1,10 +1,10 @@
-package my.project.metrics;
+package my.project.util.metrics;
 
 import io.prometheus.client.CollectorRegistry;
 import io.prometheus.client.Counter;
 import io.prometheus.client.Histogram;
 
-import my.project.exception.exceptions.InvalidMetricsConfigurationException;
+import my.project.util.exception.exceptions.InvalidMetricsConfigurationException;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 
@@ -99,7 +99,7 @@ public class MetricsAspect {
 
     }
 
-    @Around("@annotation(my.project.metrics.CollectMetrics)")
+    @Around("@annotation(my.project.util.metrics.CollectMetrics)")
     public Object collectMetrics(ProceedingJoinPoint jp) throws Throwable {
         Histogram.Timer timer;
 

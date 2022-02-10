@@ -1,4 +1,4 @@
-package my.project.entity.dtos.requests;
+package my.project.entity.dtos;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

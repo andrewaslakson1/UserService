@@ -1,6 +1,5 @@
-package my.project.entity.dtos.responses;
+package my.project.entity.dtos;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

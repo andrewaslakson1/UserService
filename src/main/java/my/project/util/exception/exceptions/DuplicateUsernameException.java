@@ -1,4 +1,4 @@
-package my.project.exception.exceptions;
+package my.project.util.exception.exceptions;
 
 public class DuplicateUsernameException extends RuntimeException {
 
