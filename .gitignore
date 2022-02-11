@@ -1,5 +1,6 @@
 # Build files
 /target
+/.mvn
 *.jar
 *.class
 
@@ -11,4 +12,4 @@
 *.log
 
 # Private Files
-src/main/resources/application-dev.yml
+application-dev.yml

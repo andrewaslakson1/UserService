@@ -26,9 +26,9 @@ Running Instructions
 - Running: because tests have special configuration
   - package with "mvn clean package -Dmaven.test.skip"
     - default package is set to "local"
-  - package with dev profile: "mvn clean package -Dmaven.test.skip -Dspring.profile.active=dev"
+  - package with: "mvn clean package -Dmaven.test.skip"
     - !Not implemented!
-  - run with "mvn spring-boot:run"
+  - run with "mvn spring-boot:run -Dspring.profile.active=dev"
 - local Environment: Uses h2 database, used while developing
 - Dev Environment: meant to be for kubernetes, most likely connects to DB hosted on kubernetes
   - Not yet actually configured

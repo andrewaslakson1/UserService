@@ -38,13 +38,13 @@ public class LoggingAspect {
     @AfterThrowing(pointcut = "logAll()", throwing = "t")
     public void logExceptionThrown(JoinPoint jp, Throwable t) {
         String signature = extractMethodSignature(jp);
-        String exceptionName = t.getClass().getName();
+        String exceptionName = t.getClass().getSimpleName();
 
         logger.warn("{} was thrown from {} with message: {}",
                 exceptionName, signature, t.getMessage());
     }
 
     private String extractMethodSignature(JoinPoint jp) {
-        return jp.getTarget().getClass().toString() + "#" + jp.getSignature().getName();
+        return jp.getTarget().getClass().getSimpleName() + "#" + jp.getSignature().getName();
     }
 }
