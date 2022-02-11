@@ -1,0 +1,18 @@
+# Build files
+target/
+*.jar
+*.class
+
+# Intellij files
+.idea/
+*.iml
+
+# logs
+src/main/resources/logs/
+
+# local only files
+src/main/resources/application-local.yml
+src/main/resources/documentation/
+
+# Docker files
+Dockerfile
