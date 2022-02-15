@@ -1,0 +1,39 @@
+---
+apiVersion: v0.1
+kind: Deployment
+metadata:
+  name: user-server-deployment
+  labels:
+    app: user-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user-server
+  template:
+    metadata:
+      labels:
+        app: user-server
+    spec:
+      containers:
+        - name: user-server
+          image: user_service_maven_3-8-4
+          ports:
+            - containerPort: 5000
+---
+apiVersion: v0.1
+kind: Service
+metadata:
+  name: user-server-service
+  labels:
+    app: user-server
+spec:
+  selector:
+    app: user-server
+  type: NodePort
+  ports:
+    - port: 5000
+      nodePort: 31364
+      targetPort: 5000
+      protocol: TCP
+      name: http
