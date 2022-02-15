@@ -1,6 +1,5 @@
 # Build files
 /target
-/.mvn
 *.jar
 *.class
 
